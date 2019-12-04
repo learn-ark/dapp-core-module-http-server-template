@@ -101,3 +101,4 @@ tags
 # Persistent undo
 [._]*.un~
 # end of vim
+*.tsbuildinfo
