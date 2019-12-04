@@ -16,7 +16,6 @@ export const plugin: Container.IPluginDescriptor = {
     },
 
     async deregister(container: Container.IContainer, options) {
-        container.resolvePlugin<Logger.ILogger>("logger").info(`Stopping Custom HTTP Server`);
         await container.resolvePlugin<Server>("core-custom-server-example").stop();
     },
 };

@@ -30,7 +30,7 @@ export class Server {
 
     public async stop(): Promise<void> {
         if (this.http) {
-            this.logger.info(`Stopping Custom HTTP SERVER`);
+            this.logger.info(`Stopping Custom HTTP Server`);
             await this.http.stop();
         }
     }
