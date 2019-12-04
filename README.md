@@ -63,7 +63,13 @@ lerna success - @vendorname/dappname
 
 Last line showing that your dApp was detected and compiled.
 
-### STEP 3: Start Local Testnet Blockchain
+### STEP 3: Setup Development Docker Database
+
+Setup docker database config and run Postgres DB via Docker. Follow the steps from here:
+https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-1-start-docker-testnet-database
+
+
+### STEP 4: Start Local Testnet Blockchain
 
 Start local blockchain with testnet running on your developer computer. Follow steps defined in here:
 https://learn.ark.dev/core-getting-started/spinning-up-your-first-testnet#step-2-testnet-network-boot
