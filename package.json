@@ -1,25 +1,26 @@
 {
     "private": true,
-    "name": "@vendorname/your-dapp-name",
-    "description": "Your dApp description",
+    "name": "@learn-ark/dapp-core-module-http-server-example",
+    "description": "A simple dApp that shows how to create custom http server on-chain",
     "version": "0.0.1",
     "contributors": [
-        "FirstName, LastName <kristjan@ark.io>"
+        "Kristjan, Kosic <kristjan@ark.io>"
     ],
     "license": "MIT",
-    "main": "dist/index.js",
     "files": [
         "dist"
     ],
+    "main": "dist/index",
+    "types": "dist/index",
     "scripts": {
         "prepublishOnly": "yarn test && yarn build",
         "pretest": "yarn lint && yarn build",
-        "compile": "../../node_modules/typescript/bin/tsc",
-        "build": "yarn clean && yarn compile",
+        "build": "yarn clean && tsc",
         "build:watch": "yarn clean && yarn compile -w",
         "clean": "del dist",
+        "compile": "../../node_modules/typescript/bin/tsc",
         "docs": "node_modules/typedoc/bin/typedoc src --out docs",
-        "lint": "./node_modules/tslint/bin/tslint -c ./tslint.json -p ./tslint-config.json './src/**/*.ts' --fix",
+        "lint": "../../node_modules/tslint/bin/tslint -c ./tslint.json -p ./tslint-config.json './src/**/*.ts' --fix",
         "format": "yarn lint && yarn prettier",
         "prettier": "prettier --write \"./*.{ts,js,json,md}\" \"./src/**/*.{ts,js,json,md}\" \"./__tests__/**/*.{ts,js,json,md}\"",
         "lint:tests": "./node_modules/tslint/bin/tslint -c ./tslint.json '__tests__/**/*.ts' --fix",
@@ -29,24 +30,25 @@
         "test:coverage": "cross-env CORE_ENV=test jest --coverage --coveragePathIgnorePatterns='/(defaults.ts|index.ts)$' --runInBand --forceExit"
     },
     "dependencies": {
-        "@arkecosystem/core-container": "^2.6.0-next.2",
-        "@arkecosystem/core-interfaces": "^2.6.0-next.2"
+        "@arkecosystem/core-container": "^2.6.0-next.6",
+        "@arkecosystem/core-http-utils": "^2.6.0-next.6",
+        "@arkecosystem/core-interfaces": "^2.6.0-next.6"
     },
     "devDependencies": {
         "@sindresorhus/tsconfig": "^0.5.0",
         "@types/jest": "^24.0.18",
         "@types/node": "^12.7.12",
-        "tslint": "^5.20.0",
-        "tslint-config-prettier": "^1.18.0",
-        "typescript": "^3.6.4",
-        "typedoc": "^0.15.0",
-        "ts-jest": "^24.0.2",
-        "jest": "^24.9.0",
-        "jest-extended": "^0.11.2",
-        "regenerator-runtime": "^0.13.0",
         "cross-env": "^6.0.3",
         "del-cli": "^3.0.0",
-        "prettier": "^1.18.2"
+        "jest": "^24.9.0",
+        "jest-extended": "^0.11.2",
+        "prettier": "^1.18.2",
+        "regenerator-runtime": "^0.13.0",
+        "ts-jest": "^24.0.2",
+        "tslint": "^5.20.0",
+        "tslint-config-prettier": "^1.18.0",
+        "typedoc": "^0.15.0",
+        "typescript": "^3.6.4"
     },
     "jest": {
         "testEnvironment": "node",
