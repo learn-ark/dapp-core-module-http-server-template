@@ -1,10 +1,10 @@
-# ARK Core - dApp Template Project
+# ARK Core - dApp Template Project With HTTP Server Skeleton Code
 
 This is a basic template project for ARK core dApp development. Create a new project based on this template and load your plugin into the corresponding network configuration by following the steps below.
 
 > This Example is currently operational only on our `core/develop` branch!
 
-This template project provides initial structure for your dApp development.
+This template project provides initial structure for your dApp development with a HTTP Server Implemented (using HAPI).
 
 ## dApp Creation Steps
 
@@ -34,7 +34,7 @@ cd packages/core/bin/config/testnet
 
 Locate file `plugins.js`. We will add our dApp name to end of the list of the loaded plugins. This means that core will pickup the dapp and load it for a specific network configuration.
 
-Add line `"@arkecosystem/dappname": {}`: to the end of the `plugins.js` file, so it looks something like this:
+Add line `"@learn-ark/dapp-custom-module-name": {}`: to the end of the `plugins.js` file, so it looks something like this:
 
 ```javascript
     "@arkecosystem/core-exchange-json-rpc": {
@@ -45,7 +45,7 @@ Add line `"@arkecosystem/dappname": {}`: to the end of the `plugins.js` file, so
         whitelist: ["127.0.0.1", "::ffff:127.0.0.1"],
     },
     "@arkecosystem/core-snapshots": {},
-    "@vendorname/dappname": {}, //our application hook (here we load the plugin/dapp, as defined in your dapp package.json)
+    "@learn-ark/dapp-core-module-http-server-template": {}, //our application hook (here we load the plugin/dapp, as defined in your dapp package.json)
 ```
 
 > Make sure to run `yarn setup` from the `core` root folder when you change or add code to `core/plugins`
@@ -73,12 +73,35 @@ If you already have running and compiled core, you should go to `core/packages/c
 After local testnet starts, the log should show that dApp was loaded. It should look like this (if you haven't changed the source code):
 
 ```bash
-[2019-10-22 11:13:27.161] INFO : Starting dApp
-[2019-10-22 11:13:27.161] INFO : Initialization of dApp
+[2019-12-04 10:23:58.269] INFO : Starting dApp
+[2019-12-04 10:23:58.273] INFO : Custom HTTP Public HTTP API Server running at: http://0.0.0.0:5003
 ```
 
 > Congratulations. Your first distributed blockchain application is loaded and working and compatible with any ARK Core based blockchain.
 
+Now, let's test our new HTTP server. The default registered route should return "Hello Arkies!". Let's try it out:
+
+```bash
+curl --request GET \
+  --url http://127.0.0.1:5003/
+```
+
+You should receive the following response:
+```json
+{
+  "data": "Hello World!"
+}
+```
+
+You can see the code and registered route here:
+https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L49-L56.
+
+Now you can start playing around, adding more custom endpoints.
+
+>If you plan to add a lot of routes make sure to checkout the official `core-api` package and follow its best-practices.
+
+
+### Optional:
 Feel free to look into `common/base-service.ts` class that exposes important Core Platform classes that you can work with. Your newly developed classes can extend this class and gain access to:
 
 -   wallets and state
@@ -90,47 +113,15 @@ Feel free to look into `common/base-service.ts` class that exposes important Cor
 
 > Also check other packages/modules as they follow the same dApp structure.
 
-## Use Block Explorer To View Local Running Testnet
+#### Use Block Explorer To View Local Running Testnet
 
-The following code instructions will run a local copy of ARK Explorer and connect to local node.
-
-```bash
-git clone https://github.com/arkecosystem/explorer
-cd explorer
-
-yarn install
-
-yarn serve:testnet
-```
-
-After running `yarn serve:testnet` you should see the following:
-
-```bash
-DONE  Compiled successfully in 11030ms                                                                                                        11:07:14 AM
-
-No type errors found
-Version: typescript 3.6.3
-Time: 6973ms
-
-  App running at:
-  - Local:   http://localhost:8080/
-  - Network: http://192.168.0.178:8080/
-
-  Note that the development build is not optimized.
-  To create a production build, run yarn build.
-```
-
-Head over to http://localhost:8080/ to view contents of local running blockchain with Testnet environment setup.
-
+Click here to setup local blockchain explorer in a few simple steps:
+https://learn.ark.dev/core-getting-started/setup-local-blockchain-explorer
 ---
 
 > Congrats, your dapp is loaded. Now look at the resources below to understand more about our dapp development.
 
 -   [Learn Development With ARK](https://learn.ark.dev)
-
-## Security
-
-If you discover a security vulnerability within this package, please send an e-mail to security@ark.io. All security vulnerabilities will be promptly addressed.
 
 ## License
 
