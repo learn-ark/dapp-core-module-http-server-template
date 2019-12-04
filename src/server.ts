@@ -51,7 +51,7 @@ export class Server {
             method: "GET",
             path: "/",
             handler() {
-                return { data: "Hello World!" };
+                return { data: "Hello ARKies!" };
             },
         });
 
