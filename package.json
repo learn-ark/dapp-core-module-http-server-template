@@ -1,6 +1,6 @@
 {
     "private": true,
-    "name": "@learn-ark/dapp-core-module-http-server-example",
+    "name": "@learn-ark/dapp-core-module-http-server-template",
     "description": "A simple dApp that shows how to create custom http server on-chain",
     "version": "0.0.1",
     "contributors": [
@@ -19,8 +19,8 @@
         "build:watch": "yarn clean && yarn compile -w",
         "clean": "del dist",
         "compile": "../../node_modules/typescript/bin/tsc",
-        "docs": "node_modules/typedoc/bin/typedoc src --out docs",
-        "lint": "../../node_modules/tslint/bin/tslint -c ./tslint.json -p ./tslint-config.json './src/**/*.ts' --fix",
+        "docs": "./node_modules/typedoc/bin/typedoc src --out docs",
+        "lint": "./node_modules/tslint/bin/tslint -c ./tslint.json -p ./tslint-config.json './src/**/*.ts' --fix",
         "format": "yarn lint && yarn prettier",
         "prettier": "prettier --write \"./*.{ts,js,json,md}\" \"./src/**/*.{ts,js,json,md}\" \"./__tests__/**/*.{ts,js,json,md}\"",
         "lint:tests": "./node_modules/tslint/bin/tslint -c ./tslint.json '__tests__/**/*.ts' --fix",
