@@ -93,6 +93,12 @@ You should receive the following response:
 }
 ```
 
+You can also try the following call:
+```bash
+curl --request GET \
+  --url http://127.0.0.1:5003/config
+```
+
 You can see the code and registered route here:
 https://github.com/learn-ark/dapp-core-module-http-server-template/blob/master/src/server.ts#L49-L56.
 
