@@ -119,10 +119,13 @@ Feel free to look into `common/base-service.ts` class that exposes important Cor
 
 > Also check other packages/modules as they follow the same dApp structure.
 
+
 #### Use Block Explorer To View Local Running Testnet
+
 
 Click here to setup local blockchain explorer in a few simple steps:
 https://learn.ark.dev/core-getting-started/setup-local-blockchain-explorer
+
 ---
 
 > Congrats, your dapp is loaded. Now look at the resources below to understand more about our dapp development.
