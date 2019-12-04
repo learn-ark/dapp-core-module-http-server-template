@@ -1,4 +1,4 @@
-# ARK Core - dApp Template Project With HTTP Server Skeleton Code
+# Reusable ARK Core Module - dApp Template Project With Operational HTTP Server
 
 This is a basic template project for ARK core dApp development. Create a new project based on this template and load your plugin into the corresponding network configuration by following the steps below.
 
