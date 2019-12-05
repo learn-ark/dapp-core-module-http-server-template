@@ -1,5 +1,4 @@
-[Imgur](https://i.imgur.com/S48ntWe.png)
-
+![Imgur](https://i.imgur.com/S48ntWe.png)
 ## Reusable ARK Core Module - dApp Template Project With Operational HTTP Server
 
 This is a basic template project for ARK core dApp development. Create a new project based on this template and load your plugin into the corresponding network configuration by following the steps below.
