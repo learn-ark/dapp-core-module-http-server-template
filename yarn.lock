@@ -76,21 +76,21 @@
     expand-home-dir "^0.0.3"
     nanomatch "^1.2.13"
 
-"@arkecosystem/core-interfaces@2.6.25", "@arkecosystem/core-interfaces@^2.6.25":
-  version "2.6.25"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.25.tgz#4d7665fd996744903664f396b89840ee29a487df"
-  integrity sha512-1puYUmUwGHldFkC+wd1+bVo0AEFNY4cEFOj6ZfMI7+3i+zRVFu+Nizs6tDkm+CfuVIYW8PoEOxME+9cViJVb/A==
-  dependencies:
-    "@arkecosystem/crypto" "^2.6.25"
-    awilix "^4.2.2"
-    dayjs "^1.8.15"
-
-"@arkecosystem/core-interfaces@^2.6.27":
+"@arkecosystem/core-interfaces@2.6.27", "@arkecosystem/core-interfaces@^2.6.27":
   version "2.6.27"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.27.tgz#6312ddc98e3f3e46917bcb60c67e4354d45cecd6"
   integrity sha512-AnQzsHP6pA756WnHAAn6ylUj2MPYWVotKU6Wk0Usw4a2SLGY3VcIlvz7++5yaiSNvSPYzZ9p7vzpOiaw7GsSBQ==
   dependencies:
     "@arkecosystem/crypto" "^2.6.27"
+    awilix "^4.2.2"
+    dayjs "^1.8.15"
+
+"@arkecosystem/core-interfaces@^2.6.25":
+  version "2.6.25"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.25.tgz#4d7665fd996744903664f396b89840ee29a487df"
+  integrity sha512-1puYUmUwGHldFkC+wd1+bVo0AEFNY4cEFOj6ZfMI7+3i+zRVFu+Nizs6tDkm+CfuVIYW8PoEOxME+9cViJVb/A==
+  dependencies:
+    "@arkecosystem/crypto" "^2.6.25"
     awilix "^4.2.2"
     dayjs "^1.8.15"
 
