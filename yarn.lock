@@ -2,30 +2,7 @@
 # yarn lockfile v1
 
 
-"@arkecosystem/core-container@2.6.29":
-  version "2.6.29"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.29.tgz#9e4f857966d4a66396343da85d6cbb4b9a00cd76"
-  integrity sha512-vcGNvEYi7D/qM5zEoj5wpfI8+TvOJaP3H5BUARVyvvaW9gIP8gRVDH4+GZNB+BCs4hvUjzhfZGJqPybhQSCANA==
-  dependencies:
-    "@arkecosystem/core-event-emitter" "^2.6.29"
-    "@arkecosystem/core-interfaces" "^2.6.29"
-    "@arkecosystem/crypto" "^2.6.29"
-    "@hapi/hoek" "^8.0.2"
-    "@hapi/joi" "^15.1.0"
-    awilix "^4.2.2"
-    delay "^4.3.0"
-    env-paths "^2.2.0"
-    envfile "^4.0.0"
-    expand-home-dir "^0.0.3"
-    fs-extra "^8.1.0"
-    got "^9.6.0"
-    lodash.get "^4.4.2"
-    lodash.isstring "^4.0.1"
-    lodash.set "^4.3.2"
-    log-process-errors "^5.0.2"
-    semver "^7.0.0"
-
-"@arkecosystem/core-container@^2.6.30":
+"@arkecosystem/core-container@2.6.30", "@arkecosystem/core-container@^2.6.30":
   version "2.6.30"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.30.tgz#3c4020ad129dc39045ee8d331d2a48050c51df49"
   integrity sha512-ag8MEnPwDkEn1Gadh3qjgJMxoqOGzU0qcwQWIA/xIk9Arl9amEvMDerA7h+kfFo7OKdQ1rQ5IqHTOxxkW0sJeQ==
@@ -47,11 +24,6 @@
     lodash.set "^4.3.2"
     log-process-errors "^5.0.2"
     semver "^7.0.0"
-
-"@arkecosystem/core-event-emitter@^2.6.29":
-  version "2.6.29"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.29.tgz#805e9480f0bb6d37333abb5cb193360a6166c5f9"
-  integrity sha512-b5N+Mq6qtUjHgWJYbsfALhq5mFHO3nNSzh/+ijasqkDOS6ao3Izv8alZHnwCnXTFXYrhNQ/cYMGuM2NP1N8nMg==
 
 "@arkecosystem/core-event-emitter@^2.6.30":
   version "2.6.30"
@@ -76,7 +48,7 @@
     expand-home-dir "^0.0.3"
     nanomatch "^1.2.13"
 
-"@arkecosystem/core-interfaces@2.6.29", "@arkecosystem/core-interfaces@^2.6.29":
+"@arkecosystem/core-interfaces@2.6.29":
   version "2.6.29"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.29.tgz#5c183195b870ab102dda05cac3e308566845fd95"
   integrity sha512-GHFHa6DXQ48fyeqM6v/oVcOH076Za35Cdsu+UhV4cn/OYTs/4SXpcDas54+xvdP5IDn1NyoSoRsRvwqWGkLmAQ==
