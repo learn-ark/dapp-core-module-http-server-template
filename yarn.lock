@@ -76,7 +76,16 @@
     expand-home-dir "^0.0.3"
     nanomatch "^1.2.13"
 
-"@arkecosystem/core-interfaces@2.6.36", "@arkecosystem/core-interfaces@^2.6.36":
+"@arkecosystem/core-interfaces@2.6.37":
+  version "2.6.37"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.37.tgz#72174f446775d686dc6aeed1470f83fadaec5e63"
+  integrity sha512-AfU/8tLOMQDopp2WGpdKykM9paiWUD5hdmUA5kSsyF3b6tB96NKzjp1inmdIqDQamZYevssAPaT9OaHbdVI80Q==
+  dependencies:
+    "@arkecosystem/crypto" "^2.6.37"
+    awilix "^4.2.2"
+    dayjs "^1.8.15"
+
+"@arkecosystem/core-interfaces@^2.6.36":
   version "2.6.36"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.36.tgz#dc9b558d9c0d78ecc81fb98c0c9d2d3a9f1955fe"
   integrity sha512-uP/oFxNqRxjxIheK7kmcQpc7q/niv0AwlSJEjEDT0MAyWQMY/C5mGsyT8pL8LJDB8n1pNGDXv7rtEz2CStW5vA==
