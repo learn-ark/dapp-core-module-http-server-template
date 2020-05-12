@@ -32,7 +32,7 @@
     "dependencies": {
         "@arkecosystem/core-container": "2.6.36",
         "@arkecosystem/core-http-utils": "2.6.36",
-        "@arkecosystem/core-interfaces": "2.6.36"
+        "@arkecosystem/core-interfaces": "2.6.37"
     },
     "devDependencies": {
         "@sindresorhus/tsconfig": "0.7.0",
