@@ -2,30 +2,7 @@
 # yarn lockfile v1
 
 
-"@arkecosystem/core-container@2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.38.tgz#5c694290ba7860fd3309aafd02156c0cd1c02349"
-  integrity sha512-Zw/dNrINyXyqNfadrHhfTZdoboILJF6cgCbaKeR+t0e7rNTwrJuz2Z8NBGB0nM1pRtXItUynU5aWs1WcHr3iPg==
-  dependencies:
-    "@arkecosystem/core-event-emitter" "^2.6.38"
-    "@arkecosystem/core-interfaces" "^2.6.38"
-    "@arkecosystem/crypto" "^2.6.38"
-    "@hapi/hoek" "^8.0.2"
-    "@hapi/joi" "^15.1.0"
-    awilix "^4.2.2"
-    delay "^4.3.0"
-    env-paths "^2.2.0"
-    envfile "^4.0.0"
-    expand-home-dir "^0.0.3"
-    fs-extra "^8.1.0"
-    got "^9.6.0"
-    lodash.get "^4.4.2"
-    lodash.isstring "^4.0.1"
-    lodash.set "^4.3.2"
-    log-process-errors "^5.0.2"
-    semver "^7.0.0"
-
-"@arkecosystem/core-container@^2.6.42":
+"@arkecosystem/core-container@2.6.42", "@arkecosystem/core-container@^2.6.42":
   version "2.6.42"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.42.tgz#bbb7cbbad55ab15d8f1ac96f273e9a0a4e1711b1"
   integrity sha512-aJDc2OBOMd4JSPL4eScmn7Fe97weCEOnw6m0jajtOrmixVvc8TO7ZXOJula0xAEkwBaBOq4uTCWlTVdLiZiaJA==
@@ -47,11 +24,6 @@
     lodash.set "^4.3.2"
     log-process-errors "^5.0.2"
     semver "^7.0.0"
-
-"@arkecosystem/core-event-emitter@^2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.38.tgz#1882b76fea617931db5225700f67ff315065c064"
-  integrity sha512-HXww7bmk+4a6wy+1Bxp0l+1zRjNWeqXFIlUeodARUpCzo05w2dv8Jr6omBZwHPcTwmpcCVjptWnAZDI9PbnkeQ==
 
 "@arkecosystem/core-event-emitter@^2.6.42":
   version "2.6.42"
@@ -85,15 +57,6 @@
     awilix "^4.2.2"
     dayjs "^1.8.15"
 
-"@arkecosystem/core-interfaces@^2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.6.38.tgz#bb0fee3b53ca05892922012444049001932ccfbf"
-  integrity sha512-/6e9OWbQRhIEk1u0kKb+HPQR7H6A9dILIf3dBVPyQWiBTZULj6EmJtH5FgyIKsDi6GLjwZa2CtKreBRbYFmfRg==
-  dependencies:
-    "@arkecosystem/crypto" "^2.6.38"
-    awilix "^4.2.2"
-    dayjs "^1.8.15"
-
 "@arkecosystem/core-utils@^2.6.42":
   version "2.6.42"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-utils/-/core-utils-2.6.42.tgz#ff192cee7344ed1d340f250781ae7eda3c6241a0"
@@ -108,32 +71,6 @@
     got "^9.6.0"
     immutable "^4.0.0-rc.12"
     nanomatch "^1.2.13"
-
-"@arkecosystem/crypto@^2.6.38":
-  version "2.6.38"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/crypto/-/crypto-2.6.38.tgz#e61e502b9ef0c5d670ef3f9f336fb11fe49242d9"
-  integrity sha512-kRglUO+6T5zGBpgt5GJ0bxiFPaA6lSNTc7rs87zty3WUgYHSE45tF6S4xKzNMwFSpBgm19BJA5ytAdn6iM83Pg==
-  dependencies:
-    "@arkecosystem/utils" "^1.1"
-    "@types/bytebuffer" "^5.0.40"
-    ajv "^6.10.2"
-    ajv-keywords "^3.4.1"
-    bcrypto "^4.1.0"
-    bip32 "^2.0.3"
-    bip39 "^3.0.2"
-    browserify-aes "^1.2.0"
-    bstring "^0.3.9"
-    buffer-xor "^2.0.2"
-    bytebuffer "^5.0.1"
-    dayjs "^1.8.15"
-    deepmerge "^4.0.0"
-    fast-memoize "^2.5.1"
-    ipaddr.js "^1.9.0"
-    lodash.get "^4.4.2"
-    lodash.set "^4.3.2"
-    lodash.sumby "^4.6.0"
-    tiny-glob "^0.2.6"
-    wif "^2.0.6"
 
 "@arkecosystem/crypto@^2.6.42":
   version "2.6.42"
@@ -1589,16 +1526,6 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-bcrypto@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/bcrypto/-/bcrypto-4.1.0.tgz#04fd2ec095e4eba121412e287b9c542cd7230a57"
-  integrity sha512-7QMCwNPAM53PcRG2gHwMHLcTjSwyQPYfTptRS38KuBZ7/Bf7zXVHZrQlvNnpu/m13qCVEMY4Wimnc+qt+rvMZg==
-  dependencies:
-    bsert "~0.0.10"
-    bufio "~1.0.6"
-    loady "~0.0.1"
-    nan "^2.13.2"
-
 bcrypto@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/bcrypto/-/bcrypto-5.2.0.tgz#7cc944d2cc2b7beeff04c74f8611a001612a981d"
@@ -1755,11 +1682,6 @@ buffer-xor@^2.0.2:
   integrity sha512-eHslX0bin3GB+Lx2p7lEYRShRewuNZL3fUl4qlVJGGiwoPGftmt8JQgk2Y9Ji5/01TnVDo33E5b5O3vUB1HdqQ==
   dependencies:
     safe-buffer "^5.1.1"
-
-bufio@~1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/bufio/-/bufio-1.0.6.tgz#e0eb6d70b2efcc997b6f8872173540967f90fa4d"
-  integrity sha512-mjYZFRHmI9bk3Oeexu0rWjHFY+w6hGLabdmwSFzq+EFr4MHHsNOYduDVdYl71NG5pTPL7GGzUCMk9cYuV34/Qw==
 
 bufio@~1.0.7:
   version "1.0.7"
