@@ -37,7 +37,7 @@
     "devDependencies": {
         "@sindresorhus/tsconfig": "0.7.0",
         "@types/jest": "26.0.3",
-        "@types/node": "12.12.47",
+        "@types/node": "12.12.52",
         "cross-env": "7.0.2",
         "del-cli": "3.0.1",
         "jest": "26.1.0",
