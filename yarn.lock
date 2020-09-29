@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@arkecosystem/core-container@2.6.57", "@arkecosystem/core-container@^2.6.57":
+"@arkecosystem/core-container@2.6.57":
   version "2.6.57"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.6.57.tgz#75ba178525905cd8fa380ffea05533f5389062ed"
   integrity sha512-axp6nfxPySFVhcTSbT/84r5UjLBdiweem4VQ3+lvAMuOHvATQlm4AHV5+hwgYVs+HAH8Xk0WE6W46uM/g9WOBw==
@@ -25,19 +25,47 @@
     log-process-errors "^5.0.2"
     semver "^7.0.0"
 
+"@arkecosystem/core-container@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-container/-/core-container-2.7.1.tgz#a3ba39cca6deb6d63af53d1ea89ff285acdf5296"
+  integrity sha512-WTgjWdN4SlScEru3Ic+Jq9fa1eJq3BNxaGFkm8SL9GZopcPUR3mX5FwhSa54LnAsb4Xn29d+Xa7P7772XL/pqw==
+  dependencies:
+    "@arkecosystem/core-event-emitter" "^2.7.1"
+    "@arkecosystem/core-interfaces" "^2.7.1"
+    "@arkecosystem/crypto" "^2.7.1"
+    "@hapi/hoek" "^8.0.2"
+    "@hapi/joi" "^15.1.0"
+    awilix "^4.2.2"
+    delay "^4.3.0"
+    env-paths "^2.2.0"
+    envfile "^4.0.0"
+    expand-home-dir "^0.0.3"
+    fs-extra "^8.1.0"
+    got "^9.6.0"
+    lodash.get "^4.4.2"
+    lodash.isstring "^4.0.1"
+    lodash.set "^4.3.2"
+    log-process-errors "^5.0.2"
+    semver "^7.0.0"
+
 "@arkecosystem/core-event-emitter@^2.6.57":
   version "2.6.57"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.6.57.tgz#d00e76288be49834c2dc5a1d11ded3c24355b618"
   integrity sha512-SvohIe+40cE46/jF56oNDV/17LEB2YBfYqeUx/Pe8JWc6hkZGaIsBVwBLrJO4P/VLEfOc3S8LwqV03smdqLqAA==
 
-"@arkecosystem/core-http-utils@2.6.57":
-  version "2.6.57"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-http-utils/-/core-http-utils-2.6.57.tgz#06bcc6a7c42f2d182edb02823719c1725d2f0c35"
-  integrity sha512-9tYJvHkNN5DnXrQWvEPNt6Q3fA1FdMMvGHwBOHWgXuJi8l6pF7cdyv3KhUE5Cb/xudVHvJ5GwqTsqAgrtISDUQ==
+"@arkecosystem/core-event-emitter@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-event-emitter/-/core-event-emitter-2.7.1.tgz#1675ce8edc5bfa2b92f46c4b589b49ab8b113419"
+  integrity sha512-j0rU79FQX7R6g8/L1kdvDKwB6L6J4/CuUr8Vr96pLrZ5ju+bmTefwPqxCNMOtizTagbhcEzyGA4WHbqNxRT4dw==
+
+"@arkecosystem/core-http-utils@2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-http-utils/-/core-http-utils-2.7.1.tgz#aa3b76d304412d00098f13ee62c4fc14a812afc9"
+  integrity sha512-vo+QFPVlb2i6PWcDi88mDu0N1CntRCnOxs3QLwPjUssHmpi2SBgRY4wRAgo8QtgigM3B9b/tg1s8LsCowW6RnA==
   dependencies:
-    "@arkecosystem/core-container" "^2.6.57"
-    "@arkecosystem/core-utils" "^2.6.57"
-    "@arkecosystem/crypto" "^2.6.57"
+    "@arkecosystem/core-container" "^2.7.1"
+    "@arkecosystem/core-utils" "^2.7.1"
+    "@arkecosystem/crypto" "^2.7.1"
     "@hapi/boom" "^8.0.0"
     "@hapi/good" "^8.2.0"
     "@hapi/good-console" "^8.1.0"
@@ -48,7 +76,7 @@
     expand-home-dir "^0.0.3"
     nanomatch "^1.2.13"
 
-"@arkecosystem/core-interfaces@2.7.1":
+"@arkecosystem/core-interfaces@2.7.1", "@arkecosystem/core-interfaces@^2.7.1":
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/@arkecosystem/core-interfaces/-/core-interfaces-2.7.1.tgz#1f99cf5b7a2f412218788985141d0d7a3e6760a2"
   integrity sha512-eNep9QP/rzIqf/oj6R95OScJhmHjG+x6e8HmiH5W/6L4uxEMdP9ebOTFpuWmSWtmm+61HvE0fBmYPlaWAFkCNg==
@@ -66,14 +94,14 @@
     awilix "^4.2.2"
     dayjs "^1.8.15"
 
-"@arkecosystem/core-utils@^2.6.57":
-  version "2.6.57"
-  resolved "https://registry.yarnpkg.com/@arkecosystem/core-utils/-/core-utils-2.6.57.tgz#84ba4c99ce8eb9164d8110ce2a6d4a6bb83a2460"
-  integrity sha512-5X9kcMSznGKr4EPIiOi9u1/l3ntFvyoaTUFxD43Z+B3++tQRuLbmpILp4CStB02Din2WrEWgVjq+uuUMIxraxw==
+"@arkecosystem/core-utils@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@arkecosystem/core-utils/-/core-utils-2.7.1.tgz#9138e30a795d1c7e3a55ae4e17e68d4609f1227e"
+  integrity sha512-R3FHfMrXRqpQglJBaXfHP7akyN+mqH6If5gLoEPzDk+6YCuAQI5R25T0rYiH0T+ZXlLnt2WN1KSH9mmHPtuoCA==
   dependencies:
-    "@arkecosystem/core-container" "^2.6.57"
-    "@arkecosystem/core-interfaces" "^2.6.57"
-    "@arkecosystem/crypto" "^2.6.57"
+    "@arkecosystem/core-container" "^2.7.1"
+    "@arkecosystem/core-interfaces" "^2.7.1"
+    "@arkecosystem/crypto" "^2.7.1"
     cli-table3 "^0.5.1"
     dayjs "^1.8.15"
     fast-json-parse "^1.0.3"
